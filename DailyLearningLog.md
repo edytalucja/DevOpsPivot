@@ -85,3 +85,10 @@
 
 ## 2025-11-21 FRI
 - got acquainted with the `nice` and `renice` commands. `nice` starts a process with a specific priority, while `renice` adjusts the priority of a process that’s already running. Priorities range from -20 (highest, requires `sudo`) to 19 (lowest). Basic usage: `nice -n 10 my_program` and `sudo renice -n -5 -p <PID>`.
+
+## 2025-11-22 SAT
+- spent the day reviewing past lessons. Slower pace, but I often find it very useful — things clicked into place that felt fuzzy the first time around.
+
+## 2025-11-25 TUE
+- refreshed my understanding of the Linux filesystem hierarchy and the purpose of the main directories under /. This time it felt much clearer why the structure exists the way it does — it’s surprisingly elegant once you see the logic behind it.
+- learned the basics of Red Hat’s package management tools: rpm for low-level package operations, and the higher-level managers (yum and its successor dnf) that handle dependency resolution. 
