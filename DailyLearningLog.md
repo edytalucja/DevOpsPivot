@@ -97,3 +97,18 @@
 - practiced special permissions (`u+s`, `g+s`, `+t`) using `chmod` and saw how `setuid`, `setgid`, and the sticky bit change execution rights and behavior in shared environments.
 - reviewed how these bits layer on top of normal `rwx` permissions, including examples like how passwd safely uses setuid.
 - switched between users and groups to verify permission behavior for some proper first-hand experience.
+
+## 2025-11-28 FRI
+- Learned how Access Control Lists (ACLs) extend normal `rwx` permissions with fine-grained rules for specific users and groups, plus default ACLs for new files.
+- Practiced viewing and editing ACLs using `getfacl` and `setfacl`:
+  - View: `getfacl file`  
+  - Add entry: `setfacl -m u:<user>:rw file`  
+  - Remove entry: `setfacl -x u:<user> file`  
+  - Set default ACL: `setfacl -d -m g:<group>:rwx dir`
+- Reviewed how the ACL mask limits effective permissions — e.g., even if an ACL grants `rwx`, a mask of `r--` reduces the user’s actual access to read-only.
+
+## 2025-12-01 MON
+- learned how `find` searches the filesystem in real time using filters like `-name`, `-type`, `-size`, and `-maxdepth`. It's accurate, flexible, and always reflects the current state of the system. 
+- understood how `locate` works differently: it searches a prebuilt index instead of the live filesystem. It's extremely fast, but it won’t show newly created files until the database is updated with `sudo updatedb`.
+- compared them in practice: `find` is the tool for live, precise searches; `locate` is ideal for quick lookups when speed matters but freshness isn’t critical.
+
