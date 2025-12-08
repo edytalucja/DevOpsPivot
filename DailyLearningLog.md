@@ -124,3 +124,6 @@
   - `traceroute <host>` to see the path packets take (`traceroute google.com`).
   - `netstat -tulpn` to list listening ports and processes.
   - `nslookup <domain>` for basic DNS lookups (`nslookup example.com`).
+
+## 2025-12-08 MON
+- repeated material from last 3 sessions to solidify new information
