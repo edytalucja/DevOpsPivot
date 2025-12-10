@@ -127,3 +127,9 @@
 
 ## 2025-12-08 MON
 - repeated material from last 3 sessions to solidify new information
+
+## 2025-12-09 TUE
+- touched briefly on shell scripting (variables, loops, functions). Material didn’t go deep, so I decided to spin off a side quest into shell scripting and basic networking before moving forward.
+
+## 2025-12-10 WED
+- spun up a CentOS VM on DigitalOcean — first time using a cloud VM, so getting it deployed and connected was part of the learning. Played with `echo`, variable assignment/reassignment, and simple appending to get comfortable working in that environment.
