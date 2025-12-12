@@ -133,3 +133,7 @@
 
 ## 2025-12-10 WED
 - spun up a CentOS VM on DigitalOcean — first time using a cloud VM, so getting it deployed and connected was part of the learning. Played with `echo`, variable assignment/reassignment, and simple appending to get comfortable working in that environment.
+
+## 2025-12-12 FRI
+- started _Learn how to shell script through project-based training (Bash Scripting, Bash Programming, Sed, Grep, Awk, and More)_ udemy course by Jason Cannon. 
+- training and internalizing the basic bash syntax and catching fun/useful commands like `${?}` - exit status of the most recent command.
