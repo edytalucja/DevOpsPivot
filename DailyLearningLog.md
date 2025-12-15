@@ -135,5 +135,7 @@
 - spun up a CentOS VM on DigitalOcean — first time using a cloud VM, so getting it deployed and connected was part of the learning. Played with `echo`, variable assignment/reassignment, and simple appending to get comfortable working in that environment.
 
 ## 2025-12-12 FRI
-- started _Learn how to shell script through project-based training (Bash Scripting, Bash Programming, Sed, Grep, Awk, and More)_ udemy course by Jason Cannon. 
-- training and internalizing the basic bash syntax and catching fun/useful commands like `${?}` - exit status of the most recent command.
+- started Jason Cannon’s Learn how to shell script through project-based training course. Focused on basic Bash syntax and control flow; noted useful built-ins like `${?}` for checking the exit status of the last command.
+
+## 2025-12-15 MON
+- practiced shell scripting with real admin tasks: used `useradd`, `passwd`, and `read -p` to build executable scripts that automate user creation, password setup, and password expiration.
