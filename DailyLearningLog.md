@@ -139,3 +139,8 @@
 
 ## 2025-12-15 MON
 - practiced shell scripting with real admin tasks: used `useradd`, `passwd`, and `read -p` to build executable scripts that automate user creation, password setup, and password expiration.
+
+## 2025-12-28 SAT
+- wrote a bash script to generate random passwords using `$RANDOM`, timestamps (`date +%s%N`), hashing with `sha256sum`, and truncation via `head -c`.
+- improved password strength by combining time + randomness and appending a randomly selected special character using `fold`, `shuf`, and `head`.
+- key takeaway: password strength is about entropy, not just length or “looking random” — combining multiple independent sources increases unpredictability.
