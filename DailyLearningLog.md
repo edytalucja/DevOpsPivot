@@ -144,3 +144,7 @@
 - wrote a bash script to generate random passwords using `$RANDOM`, timestamps (`date +%s%N`), hashing with `sha256sum`, and truncation via `head -c`.
 - improved password strength by combining time + randomness and appending a randomly selected special character using `fold`, `shuf`, and `head`.
 - key takeaway: password strength is about entropy, not just length or “looking random” — combining multiple independent sources increases unpredictability.
+
+## 2026-01-02 FRI
+- went deeper into shell scripting fundamentals: how scripts receive arguments (`$0`, `$1`, `$2`, `$#`), how PATH affects command execution (and checking with `which`), and how to safely handle filenames using `basename` and `dirname`.
+- practiced looping over arguments and finally internalized the difference between `$@` (proper word splitting) and `$*` (everything as one string). Also reinforced the habit of checking for missing arguments and printing usage instead of letting scripts fail without any notice.
