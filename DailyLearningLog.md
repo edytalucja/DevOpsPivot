@@ -162,3 +162,8 @@
   - `${@:3}` = Doe Smith (everything from position 3 onward)
 - I am getting more efficient at reading `man` pages and quickly finding what I need
 - each time I use `vim`, I learn something to optimize using it and saving time - I hope this means I'm becoming "THE" IT guy. Learned today: `{` / `}` for navigation, `ci"` to edit content between quotes, and `set nu!` to toggle displaying line numbers.
+
+## 2026-01-08 THU
+- learned about file descriptors: stdin (0), stdout (1), stderr (2). Practiced basic redirection with `>`, `<`, and `>>`. Understanding that pipes pass data between commands while redirection uses files helped clarify when to use each.
+- explored explicit file descriptor syntax: can redirect stdout and stderr separately (`command 1> output.txt 2> errors.txt`) or combine them (`command > file 2>&1`). Order matters - `2>&1` must come after stdout redirection.
+- discovered `/dev/null` for discarding unwanted output (e.g., `command 2> /dev/null` to suppress known errors). These redirection techniques will be essential for writing scripts that handle errors.
