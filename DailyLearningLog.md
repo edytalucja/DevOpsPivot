@@ -172,3 +172,17 @@
 - built a complete user creation script that ties together everything from the past week: argument handling, error checking with `${?}`, and I/O redirection. Used `&> /dev/null` to suppress verbose command output and keep the script's own messages clean.
 - implemented proper error handling by checking root privileges `([[ $UID -ne 0 ]])`, verifying arguments were provided, and validating that `useradd` and `passwd` succeeded before continuing. Each failure exits with a clear error message sent to `stderr` using `>&2`.
 - combined multiple concepts into one working tool: positional parameters for username/comment, password generation with d`ate +%s%N | sha256sum | head -c48`, and `passwd -e` to force password change on first login. The script now provides clean, essential output showing username, temporary password, and hostname - feels like building something actually useful.
+
+## 2026-01-10 SAT
+- reviewed recent lessons and practiced a bit more standard input/output/error redirection, since I didn't feel like I internalized it enough.
+
+## 2026-01-15 THU
+- learned how to comment multiple lines in vim and I've never thought that I will view it as an achievement:
+  1. Go to the beginning of the first line of the text you want to comment.
+  2. `Ctrl + v` to enter visual block.
+  3. `j` to navigate to the last line of the text.
+  4. `Shift + i` to enter insert mode.
+  5. Type `#` (it will display only on the first line initially).
+  6. Press `Esc`.
+  7. Congratulate yourself.
+- practiced using case statement in bash scripting - the syntax is really something else from what I'm used to from high level programming languages but I'll learn
