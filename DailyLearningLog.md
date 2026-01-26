@@ -186,3 +186,8 @@
   6. Press `Esc`.
   7. Congratulate yourself.
 - practiced using case statement in bash scripting - the syntax is really something else from what I'm used to from high level programming languages but I'll learn
+
+## 2026-01-26 MON
+- went deeper into bash functions, focusing on interaction with command-line arguments and how positional parameters are scoped inside functions.
+- practiced organizing scripts around functions and using `local` variables to avoid global leakage.
+- implemented simple backup logic before making file changes and added error handling that logs failures to syslog instead of stdout.
