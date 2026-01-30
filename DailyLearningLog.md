@@ -194,3 +194,8 @@
 
 ## 2026-01-29 THU
 - learned and used `getopts` for option parsing in bash scripts. Added flags to a password generator script: `-v` to enable verbose output, `-s` to append a special character, and `-l <num>` to control password length. Much cleaner and more scalable than positional arguments.
+
+## 2026-01-30 FRI
+- learned how `OPTIND` works together with `getopts`: after option parsing, `shift $((OPTIND - 1))` removes all processed flags and leaves only remaining positional arguments.
+- used this pattern to detect invalid extra arguments (`[[ $# -gt 0 ]]`) and fail fast with a `usage` message instead of ignoring user mistakes.
+- takeaway: `getopts` validates *options*, `OPTIND + shift` validates that nothing unexpected was passed.
