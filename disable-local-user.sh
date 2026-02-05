@@ -45,7 +45,7 @@ for USERNAME in "${@}"
 do
 	echo "Processing user: ${USERNAME}"
 
-	# Make user the UID of the account is at least 1000.
+	# Make sure the UID of the account is at least 1000.
 	USERID=$(id -u ${USERNAME})
 	if [[ "${USERID}" -lt 1000 ]]
 	then
