@@ -201,9 +201,13 @@
 - takeaway: `getopts` validates *options*, `OPTIND + shift` validates that nothing unexpected was passed.
 
 ## 2026-02-13 FRI
-- practiced `cut`, `awk`, `sort`, and `uniq`  commands
+- practiced `cut`, `awk`, `sort`, and `uniq`  commands.
 - build complex pipelines connecting those commands to get specific, sorted output, sometimes displaying unique results, sometimes counting repeated occurences.
 
 ## 2026-02-14 SAT
 - created a script `show-attackers.sh` to capture IP addresses from failed login attempts and identify potential attackers. 
 - the course I'm doing used command `geoiplookup` to find IP's location but that command is no longer supported on CentOS, so as a workaround I used `curl -s ipinfo.io/${IP}/country`. I also excluded private IP ranges from the search.
+
+## 2026-02-17 TUE
+- learned some basic VM management through `ssh`, together with saving hostnames and usernames in `/etc/hosts` and `~/.ssh/config` for easy use.
+- what I'm learning definitely sparks ideas for new machine setup scripts or ssh authentication script with new VMs. My horizons are definitely expanding. While it's not an actual learning log bullet, I'd like to note that I'm feeling really inspired with this work and it seems to be taking me places.
